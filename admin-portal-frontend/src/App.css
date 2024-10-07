@@ -1,0 +1,81 @@
+.action-buttons button {
+  min-width: 80px;
+}
+
+.locationDropdown{
+  max-width: 300px;
+  min-width: 150px;
+  margin-right: 10px;
+}
+
+.driverLocation{
+  width: 150px;
+}
+
+/* Parent container that holds the table */
+.driverTableContainer {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+  min-height: 100vh; /* Takes full viewport height to center vertically */
+  padding: 0 10vw; /* 10vw creates small space on left and right sides */
+  box-sizing: border-box;
+}
+
+/* The table itself */
+.driverTable {
+  width: 100%; /* Makes table fill the container width */
+  max-width: 1900px; /* Optional: limits max width of the table */
+  margin: 0 auto; /* Ensures table is centered */
+  border-radius: 8px;
+  padding: 1px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Ensure action buttons are in a single line */
+.action-buttons {
+  display: flex;
+  gap: 10px; /* Adds space between the buttons */
+}
+
+.driverTableBorder {
+  border: 2px solid rgb(172, 56, 207); /* Sets the border width and color */
+  border-radius: 8px; /* Optional: to match the rounded corners */
+}
+
+.driverTable tbody tr:nth-child(odd) {
+  background-color: #f2f2f2; /* Light gray for odd rows */
+}
+
+.driverTable tbody tr:nth-child(even) {
+  background-color: #ffffff; /* White for even rows */
+}
+
+/* Optional: Hover effect for rows */
+.driverTable tbody tr:hover {
+  background-color: #e0e0e0; /* Slightly darker on hover */
+}
+
+.editBtn {
+  background-color: transparent; /* or your desired default color */
+  color: black; /* Set a default text color */
+  border: 1px solid blue; /* Optional border */
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.editBtn:hover {
+  background-color: blue; /* Change background color on hover */
+  color: white; /* Change text color on hover */
+}
+
+.deleteBtn {
+  background-color: red; /* Default background color */
+  color: black !important; /* Default text color */
+  border: none; /* No border */
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.deleteBtn:hover {
+  background-color: darkred; /* Change to darker red on hover */
+  color: white !important;
+}
